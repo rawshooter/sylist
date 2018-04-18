@@ -1,0 +1,9 @@
+$VER: ToDo 0.3 (24.4.94) © by Thomas Alexnat
+
+TODO:
+
+- must add better file-recognition (!)
+- LaTeX- output
+- rewrite source (what a mess!)
+- next version Maybe a MUI-GUI
+- much beter file handling in next releases

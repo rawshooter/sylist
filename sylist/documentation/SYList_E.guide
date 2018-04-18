@@ -1,0 +1,304 @@
+@database "SYList_E.guide"
+@wordwrap
+@author "Thomas Alexnat"
+@(c) "Copyright © 1993-94 Thomas Alexnat"
+@$VER: SYList_E.guide 0.4 (24.4.94) © by Thomas Alexnat
+@wordwrap
+
+##
+## 
+## (C) Copyright 1993-94 Thomas Alexnat
+##
+##  SYList AmigaGuide® documentation.
+##
+
+##
+## Contents
+##
+@node main "SYList Documentation"
+
+            @{b}Welcome to the usermanual from SYList !@{ub}
+
+ Please  select any of the topics listed below and follow up on the links as you wish.
+
+           @{" What is SYList             " link introduction    }
+           @{" Usage                      " link usage           }
+
+           @{" Disclaimer                 " link disclaimer      }
+           @{" Copyright and Distribution " link copyright       }
+           @{" Updates                    " link updates         }
+           @{" Troubleshooting            " link troubleshooting }
+           @{" TODO                       " link todo            }
+           @{" Comments                   " link comments        }
+
+           @{" History                    " link history         }
+@endnode
+
+
+##
+## Disclaimer
+##
+@node disclaimer Disclaimer
+
+ The author @{b} cannot@{ub} be held liable for the suitability or accuracy of this manual and/or the program(s) it describes. Any damage directly or indirectly caused by the use or misuse of this manual and/or the program it describes is the sole responsibility of the user her/him self.
+
+@endnode
+
+##
+## Copyright and Distribution
+##
+@node copyright "Copyright and Distribution"
+
+   @{b}SYList 1.0@{ub}
+@{fg shine}
+   (C) Copyright 1993-94 Thomas Alexnat
+   Written using SAS C v6.5
+
+   User Manual
+   (C) Copyright  1993-94 Thomas Alexnat
+@{fg text}
+
+ SYList, (C) Copyright 1993-94 Thomas Alexnat. All rights reserved. This program is Giftware which means that if you like the program you should reward the author with gift that, you think, matches his efforts.
+
+This program may be freely distributed as long as all files are included in the distribution without any modifications. You may @{b}not@{ub} charge more than Fred Fish does for a single library disk.
+
+This program may @{b}not@{ub} be uploaded on BBS's that claim copyrights on the uploaded material.
+
+Commercial distribution of SYList and/or it's relative files is @{b}not@{ub} allowed without written permission from the author. This also means the distribution on cover disks, disk magazines etc.
+
+I do not know how this is in other countries but here in germany some PD distributors think that they can charge extra if they translate the manual in their language and distribute that with the program.
+
+THIS IS not ALLOWED! You are welcome to add a translation to this manual in the archive but you may not CHARGE EXTRA FOR THIS!
+
+@{u}NOTE@{uu}: These copyright note ideas are based on the documentation for GadToolsBox from Jaba Development !
+
+
+ Questions to:
+
+ Thomas ALEXNAT
+ Westendstrasse 7
+ GERMANY
+ D-82110 Germering
+
+ Telephone (voice) : 089/841 15 16 ask for Thomas !
+
+ fido	2:2480/700.5
+ max	91:5150/10.5
+ ugate  94:94/10.5
+
+@endnode
+
+###
+### Updates
+###
+@node updates "Updates"
+I  don't  know  if  there  will  be  a  update for SYList in future. If this
+happens,  I  will try to send Fred Fish a new version for the library disks.
+The  other way is to look into BBSS or contact me directly. You have to make
+sure,  that  you  have  send me enough money that I do @{b}not@{b} have costs when I
+send  you  an  Update.  I can't say how long it takes to send you the update
+(depends on the country, my timetable...) Usually it takes 1-2 Months.
+
+@endnode
+
+###
+### Introduction
+###
+@node introduction "What is SYList ?"
+
+  This  program  is  able to list some information about files from a Yamaha
+SY85 music synthesizer.
+
+  As  if  you know (if you've got a SY85) the LCD-Display from the synth can
+only  display  one  name of Voices, Performances, Songs etc. So I decided to
+tidy  up  all  this  mess  and wrote PV85, also a list-program for SY85. The
+results  weren't  so  good. It was very slow, not very system-conform and so
+on.  I  stopped  to  develloping  on  PV85 and startet a universal SY85-file
+lister. SYList was born.
+
+@endnode
+
+###
+### Usage
+###
+@node Usage "Usage of SYList ?"
+
+ Please  note,  that  I  don't  make  any warranties. This software is in an
+experimental  stadium.  If  it  crashes  don't  loose  your faith (I hope it
+won't...:-)
+
+      @{" Usage of SYList                           " link inputs  }
+
+      @{" How to store Synthesizer Sounds onto Disk " link storing }
+
+      @{" Reading SY85 Disks on a Amiga             " link reading }
+
+      @{" Output in a file ?                        " link piping  }
+
+@endnode
+
+
+###
+### storing
+###
+@node storing "How to store Synthesizer Sounds onto Disk"
+ At first you've got to turn your Synthesizer on . (puhh this was hard!) Then
+ load  the  desired  Sounds into the Synth. After that press the UTILITY-Key.
+ Afterwards  you  select  Submode  DISK-Options.  There  you save the file as
+ SY-All-Data or SYNTH ALL.
+
+@endnode
+
+###
+### reading
+###
+@node reading "Reading SY85 Disks on a Amiga"
+ The  Yamaha  SY85 Synthesizer is able to read and write 3½inch MS-DOS Disks.
+ Therefore  you can use this Diskformat on AMIGAS. Make sure, that you've got
+ Workbench  2.1  or  higher.  Mount the PC-DOS-Driver (e.g.: Mount PC0: [then
+ Device DF0: could also read MS-DOS Disks])
+
+@endnode
+
+
+###
+### inputs
+###
+@node inputs "Usage of SYList"
+
+   SYList  has  got  a very powerful template-string. You must remember, that
+ SYList  is  written  for  the CLI (I mean the normal Amiga-Shell). After you
+ have installed SYList correctly try to type in:
+
+  > @{fg shine} SYLIST @{fg fill}[ENTER]@{fg text}
+  required argument is missing
+
+   As you can see, SYList wants some arguments:
+
+  > @{fg shine} SYList ? @{fg fill} [ENTER]@{fg text}
+    @{fg shine} File/A/M,All/S,Voices/S,Performances/S,Songs/S,Rhythms/S,
+     Samples/S,NoAbout/S,LaTeX/S,Version/S,NoInit/S,Rows/K/N
+@{fg text}
+  Here is the list of arguments:
+
+  File/A/M:        You MUST give SYList a filename, otherwise it will refuse
+                   to work. The filename is the @{" stored " link storing} file.
+
+  All/S:           The All option will automatically switch on the following
+                   optiions: Voices, Performances, Songs, Rhythms, Samples
+
+  Voices/S:        If you specify this keyword, SYList will try to list all
+                   voices (memory 1-4).
+
+  Performances/S:  SYList will list all performances.
+
+  Songs/S:         All songs in the file will be displayed.
+
+  Rhythms/S:       All rhythms in the file will be displayed.
+
+  Samples/S:       All samples in the file will be displayed.
+
+  NoAbout/S:       This switch will suppress the additional informations
+                   from SYList like copyright etc.
+                   
+  LaTeX/S:	   Warning: This switch isn't working (yet!). In future it
+                   will output the data in LaTeX-format. (for better tables!)
+		   see also @{" Todo " link todo}
+
+  Version/S:       prints out the version
+
+  NoInit/S:        This switch suppresses the output from Init-Voices/Performances
+                   /Songs/Rhythms/Samples
+
+  Rows/S:          Here you can specify the number of rows, when SYList
+                   dumps all his stuff out.
+
+@endnode
+
+
+###
+### piping
+###
+@node piping "Output in a file ?"
+
+ This  is also very easy to do. Just use the normal AMIGA-PIPING (Yeah I like
+ Amiga-Dos very much !)
+
+@{fg shine}  SYList @{fg text}[>OUTFILE]@{fg shine} filename options@{fg text}
+
+ e.g.
+
+@{fg shine}  SYList >SYListOutput.txt PC0:FACT_SET.G01  ALL @{fg fill}[ENTER]@{fg text}
+          ^     ^      ^
+        this file is created by SYList
+   In this case SYList will try to open the file FACT_SET.G01 on drive PC0:
+   and then perform all actions it can to on it. Afterwards the data is
+   saved in the current dir, with the filename "SYListOutput.txt".
+
+@endnode
+
+###
+### troubleshooting
+###
+@node troubleshooting "Troubleshooting"
+
+@{fg shine} KNOWN PROBLMES:@{fg text}
+
+  ° SYList doesn't stop working if it finds a non valid Yamaha-file.
+@endnode
+
+
+###
+### TODO
+###
+@node todo "TODO"
+
+  o GUI (Graphical User Inferface)
+  o LaTeX OutPut
+  o improved file-recognition
+  o better documentation (LaTeX)
+  o the AmigaGuide documentation has got to look better (e.g. OS3.0
+    HyperText Commands like @underline... which are used by MultiView)
+  o Deutsche Anleitung
+  o Full user style guide interface
+  o perhaps a SY85 editor (or even for TG500?) where you could do things
+    like reorganisating, coping, renaming via the amiga. (this will take
+    some time... see you in 2005..)
+
+  o write to me, if you want to see a new feature
+
+  ø rewrite all this stuff and make it much better ;-)
+
+@endnode
+
+###
+### Comments
+###
+@node comments "Comments"
+
+
+  My hardware was a A2000/30/25 with 7MB Ram and 450 MB HD
+
+  Tested on: A2000 (Kick 2.04), A1200 (Kick 3.00), A4000 (Kick 3.00)
+
+  If  you  have  programmed Sounds for your SY85 and want to swap then contact me 
+
+@{fg shine}                      ONLY   L E G A L  S T U F F !  @{fg text}
+
+@{fg fill}            I repeat it for the last idiot : ONLY LEGAL STUFF !@{fg text}
+
+@endnode
+
+###
+### History
+###
+@node history "History"
+
+
+
+1.00ß		first public release (internal version: 0.31ß)
+1.0		second public release
+
+see also @{" Todo " link todo}
+
+@endnode

@@ -1,0 +1,81 @@
+;$VER SY85DataFile-structure V0.3ß (24.4.94) © by Thomas Alexnat
+
+Structure of YAMAHA SY85 synth all saved files:
+
+(this was tested with the FACTORY_SET.G01 from the Original YAMAHA Software)
+
+File:	FACT_SET.G01
+====================
+
+Position (decimal)		remarks to the position
+------------------------+--------------------------------------------------
+0 - 7			|	type of savemode e.g:
+			|	SY85ALL - synth all saved
+------------------------+--------------------------------------------------
+379			|	begin of performances in memory-bank 1
+			|	every perf. has got a length of 168. The
+			|	perf. name has got 8 characters. e.g.
+			|	pos. 203 "SP Aztec"
+			|	alltogether 64 entries
+------------------------+--------------------------------------------------
+11291			|	begin of voices 1 in memory-bank 1
+			|	every voice has got a length of 162. The
+			|	perf. name has got 8 characters. e.g.
+			|	pos. 11291 "SP Macro"
+			|	alltogether 64 entries
+			|	note: SY85 Voice H8 is the DrumMap and
+			|	has got a bit more data !
+------------------------+--------------------------------------------------
+22049			|	begin of voices 2 in memory-bank 1
+			|	every voice has got a length of 162. The
+			|	perf. name has got 8 characters. e.g.
+			|	pos. 22049 "SP Sweep"
+			|	alltogether 64 entries
+			|	note: SY85 Voice H8 is the DrumMap and
+			|	has got a bit more data !
+------------------------+--------------------------------------------------
+33147			|	begin of performances in memory-bank 2
+			|	every perf. has got a length of 168. The
+			|	perf. name has got 8 characters. e.g.
+			|	pos. 33147 "CO Ncert"
+			|	alltogether 64 entries
+------------------------+--------------------------------------------------
+44059			|	begin of voices 1 in memory-bank 2
+			|	every voice has got a length of 162. The
+			|	perf. name has got 8 characters. e.g.
+			|	pos. 44059 "SP Paddy"
+			|	alltogether 64 entries
+			|	note: SY85 Voice H8 is the DrumMap and
+			|	has got a bit more data !
+------------------------+--------------------------------------------------
+54817			|	begin of voices 2 in memory-bank 2
+			|	every voice has got a length of 162. The
+			|	perf. name has got 8 characters. e.g.
+			|	pos. 54817 "CH Aah   "
+			|	alltogether 64 entries
+			|	note: SY85 Voice H8 is the DrumMap and
+			|	has got a bit more data !
+------------------------+--------------------------------------------------
+65536			|	keyword "SY85SEQ" appears; Here starts the
+			|	data of the internal sequencer
+------------------------+--------------------------------------------------
+65649			|	1st songname "InitSong" this comes 10 
+			|	times. every MultiDate has got a length
+			|	of 198
+------------------------+--------------------------------------------------
+68006			|	Rhythm names; each is 8 characters long;
+			|	they do not have any data betwwen them;
+			|	e.g "Funk1  VFunk1  F" alltogether 100
+			|	tracks
+------------------------+--------------------------------------------------
+114688			|	keyword "SY85WVALL"; Here starts the 
+			|	sample data
+------------------------+--------------------------------------------------
+114720			|	and here are the Names of the Samples			
+			|	e.g.: pos. 114720 "LOOP   "
+------------------------+--------------------------------------------------			
+
+I don't make any warranties, if this is correct. If not, send me please a
+bug report.
+
+Thanks Thomas

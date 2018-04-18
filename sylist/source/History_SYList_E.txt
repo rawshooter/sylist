@@ -1,0 +1,36 @@
+;$VER: History of SyList 0.7 (24.4.94) © by Thomas Alexnat
+
+VERSION:
+
+0.013ß	now opens the file correctly
+0.014ß  more error checking
+0.015ß  recognition of Yamaha-SY85ALL-files added
+0.016ß	minor changes
+0.017ß  can now read the 1st performances
+0.018ß	some changes
+0.019ß	now counts (A1-H8)
+0.020ß	improved filechecking and template-string
+	checks if a option is given to process the file
+0.021ß	some nasty DOUBLES were removed. Can make now rows and 
+	supports also the keyword ROWS
+0.022ß	prints out the two performances
+0.023ß	prints out the voices
+
+0.024ß	(21.10.1993)	prints out the rhythms
+0.025ß	(21.10.1993)	keywords for better error-checking added
+0.026ß	(28.10.1993)	reads now also the sequencer-infos; output
+			was changed a little bit
+0.027ß	(28.10.1993)	able to read the samples in the file
+0.028ß	(01.11.1993)	keyword NoInit is now recognized
+0.029ß	(01.11.1993)	SYList has got now a Filerequester !!!!!
+
+0.030ß	(01.11.1993)	MIN	a VPrintf was replaced by a Printf
+				because SYList messed up, when it
+				was started from Workbench
+0.31ß	(04.12.1993)	MIN	final output fortified
+
+1.0	(24.4.94)	MIN	first non-Beta-Release
+
+RELEASE:
+1.0ß	first release (Version 0.31ß)
+1.0	2nd release (Internal Revision set to 1.0)
